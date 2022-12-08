@@ -80,3 +80,4 @@ Make your own `_includes/head/custom.html`. Refer to [here](https://github.com/m
 - [ ] [header video](https://mmistakes.github.io/minimal-mistakes/layout/uncategorized/layout-header-video/), header image and so on
 - [ ] custimized sidebar like [this](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
 - [ ] check search engine optimization
+- [ ] more about frontmatter
