@@ -69,3 +69,6 @@ There is ways to do this seeing [here](https://jekyllrb.com/docs/deployment/), a
 - [Minimal Mistakes GitHub Pages site starter demo site](https://mmistakes.github.io/mm-github-pages-starter/)
 - [github-metadata](https://github.com/jekyll/github-metadata)
 - [WEBrick](https://jekyllrb.com/docs/configuration/webrick/)
+
+### favicon
+Make your own `_includes/head/custom.html`. Refer to [here](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/head/custom.html)
