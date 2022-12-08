@@ -65,10 +65,18 @@ And I prefer to ignore the warning of `No GitHub API authentication could be fou
 There is ways to do this seeing [here](https://jekyllrb.com/docs/deployment/), and I select GitHub Actions.  
 [My GitHub Action for deployment.](https://github.com/sshawn9/sshawn9.github.io/blob/main/.github/workflows/jekyll-gh-pages.yml)  
 
-### More info
+## More info
 - [Minimal Mistakes GitHub Pages site starter demo site](https://mmistakes.github.io/mm-github-pages-starter/)
 - [github-metadata](https://github.com/jekyll/github-metadata)
 - [WEBrick](https://jekyllrb.com/docs/configuration/webrick/)
 
-### favicon
-Make your own `_includes/head/custom.html`. Refer to [here](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/head/custom.html)
+## favicon
+Make your own `_includes/head/custom.html`. Refer to [here](https://github.com/mmistakes/minimal-mistakes/blob/master/_includes/head/custom.html)  
+
+## TODO
+- [ ] remove footer with feed
+- [ ] try different default layouts
+- [ ] [Post with Table of Contents](https://mmistakes.github.io/minimal-mistakes/layout-table-of-contents-post/)
+- [ ] [header video](https://mmistakes.github.io/minimal-mistakes/layout/uncategorized/layout-header-video/), header image and so on
+- [ ] custimized sidebar like [this](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
+- [ ] check search engine optimization
