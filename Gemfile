@@ -16,4 +16,5 @@ group :jekyll_plugins do
   gem "jekyll-algolia"
   gem "kramdown-parser-gfm"
   gem "webrick"
+  gem "jekyll-github-metadata"
 end

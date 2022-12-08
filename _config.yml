@@ -14,10 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-# personal settings:
+# host locally:
 PAGES_REPO_NWO: sshawn9/sshawn9.github.io
 repository: sshawn9/sshawn9.github.io
-
 
 title: MM
 email:
@@ -62,6 +61,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-github-metadata
 
 author:
   name   : "First Lastname"
