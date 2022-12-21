@@ -21,6 +21,7 @@ RUN bash ssh_for_remote_dev.sh
 ```
 Also, you may want to check my own dockerfile as [here](https://github.com/sshawn9/my_scripts/blob/master/docker/dockerfile/bionic_remote_env.Dockerfile).  
 **Notice:** to make envrionment variables effective even if the `bash` is not running interactively, I add `. ~/.bash_env` in front of `.bashrc`, and I create a `.bash_env` file under `$HOME`. Just put your perosonal envrionment variables settings in `.bash_env` file.  
+**Notice:** run `service ssh start` everytime the container started, and set up the user for ssh, I use `root` by default.  
 For more infomation, here are some reference:
 - <https://github.com/linuxserver/docker-openssh-server>
 - <https://github.com/JetBrains/clion-remote>
@@ -55,5 +56,16 @@ services:
       - "8080:8080"
 ```
 
+Reference:
+- <https://github.com/theasp/docker-novnc>
+- <http://wiki.ros.org/docker/Tutorials/GUI>
+
 ## running GUI apps in container(Ubuntu)
 Just map X11 socket, I will record this later.
+
+## something you may interested
+- <https://github.com/osrf/rocker>
+- <https://github.com/mviereck/dockerfile-x11docker-xserver>
+- <https://github.com/mviereck/dockerfile-x11docker-gnome>
+- <https://github.com/mviereck/x11docker>
+- <https://github.com/fcwu/docker-ubuntu-vnc-desktop/blob/develop/rootfs/startup.sh>
