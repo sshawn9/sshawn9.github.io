@@ -1,5 +1,7 @@
 ---
 title: "My GitHub Pages"
+categories:
+  - Blog
 tags:
   - GitHub Pages
   - Jekyll

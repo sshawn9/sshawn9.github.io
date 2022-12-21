@@ -1,5 +1,7 @@
 ---
 title: "SSH & GUI with Docker for remote development"
+categories:
+  - Blog
 tags:
   - SSH
   - GUI

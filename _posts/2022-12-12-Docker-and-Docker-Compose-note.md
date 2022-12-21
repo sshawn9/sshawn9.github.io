@@ -1,5 +1,7 @@
 ---
 title: "Docker & Docker Compose notes"
+categories:
+  - Note
 tags:
   - Docker
   - Docker Compose
