@@ -29,6 +29,9 @@ For more infomation, here are some reference:
 - <https://github.com/JetBrains/clion-remote>
 - <https://www.jetbrains.com/help/clion/remote-projects-support.html>
 
+### CLion IDE does not resolve header files when use remote host
+<https://stackoverflow.com/questions/66769074/clion-ide-does-not-resolve-header-files-when-use-remote-host>  
+
 ## running GUI apps in container(macOS)
 Actually, this way could be used widely only if your have browser and docker.  
 This is also quite easy by using novnc with docker compose, check [here](https://github.com/sshawn9/my_scripts/blob/master/docker/compose/environment_with_novnc.yml).  
