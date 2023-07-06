@@ -20,13 +20,13 @@ As GitHub recommends, I use Jekyll which is a static site generator. For basic c
 # start a container from Jekyll docker image
 # port/4000 for local hosting at http://localhost:4000
 # port/35729 is exposed by image
-docker run -itd -p 35729:35729 -p 4000:4000 -v $HOME/workspace/sshawn9.github.io:/jekyll --name jekyll jekyll/jekyll
+docker run -itd -p 35729:35729 -p 4000:4000 -v $HOME/workspace/sshawn9.github.io:/jekyll --name jekyll jekyll/jekyll bash
 
 # enter the container
 docker exec -it jekyll bash
 
 # some commonly used commands in Jekyll container
-bundle init # create the default Genfile
+bundle init # create the default Gemfile
 bundle
 bundle update
 jekyll serve
