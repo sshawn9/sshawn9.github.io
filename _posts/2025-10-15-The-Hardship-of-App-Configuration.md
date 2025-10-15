@@ -25,7 +25,7 @@ categories:
 
 随后我断断续续又做了一些调研，按照时间顺序呈现一下我调研到的可选方案：
 
-- [etcd](https://etcd.io/)
+- [etcd](https://etcd.io/)  
   这个方案并没有让我纠结太久，功能上完全满足了，但是应用成本稍高，不予采用。
 
 - [NATS](https://nats.io/)  
