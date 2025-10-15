@@ -26,15 +26,15 @@ categories:
 随后我断断续续又做了一些调研，按照时间顺序呈现一下我调研到的可选方案：
 
 - [etcd](https://etcd.io/)
-这个方案并没有让我纠结太久，功能上完全满足了，但是应用成本稍高，不予采用。
+  这个方案并没有让我纠结太久，功能上完全满足了，但是应用成本稍高，不予采用。
 
-- [NATS](https://nats.io/)
-这个方案很棒了，生态也很好，我基本就快要敲定是它了，但是我的性格往往是再多走一步，不会因为当前方案已经很好了就彻底停止探索，所以继续往下看。
+- [NATS](https://nats.io/)  
+  这个方案很棒了，生态也很好，我基本就快要敲定是它了，但是我的性格往往是再多走一步，不会因为当前方案已经很好了就彻底停止探索，所以继续往下看。
 
-- [Zenoh](https://zenoh.io/)
-作为ros2目前唯一的非DDS中间件，这个工具我此前就已经知道了。
-说句题外话，这有一份[ros2 RMW替代方案研究报告](https://discourse.openrobotics.org/uploads/short-url/o9ihvSjCwB8LkzRklpKdeesRTDi.pdf)，结论正是Zenoh，在ros2 kilted中也较为完整的支持了`rmw_zenoh_cpp`.
-Zenoh的未来我很看好，但是作为开发配置系统的基石来说做不到开箱即用，开法成本会比NATS高一点，但是我看中的是其未来能在整个自动驾驶系统中发挥更多更大的作用，这样的话使用Zenoh等于作了技术铺垫，同时也有利于后续使用Zenoh开发更多功能后，配置系统能够天然融入，这样的话付出一点开发成本我是可以接受的。
+- [Zenoh](https://zenoh.io/)  
+  作为ros2目前唯一的非DDS中间件，这个工具我此前就已经知道了。  
+  说句题外话，这有一份[ros2 RMW替代方案研究报告](https://discourse.openrobotics.org/uploads/short-url/o9ihvSjCwB8LkzRklpKdeesRTDi.pdf)，结论正是Zenoh，在ros2 kilted中也较为完整的支持了`rmw_zenoh_cpp`.  
+  Zenoh的未来我很看好，但是作为开发配置系统的基石来说做不到开箱即用，开法成本会比NATS高一点，但是我看中的是其未来能在整个自动驾驶系统中发挥更多更大的作用，这样的话使用Zenoh等于作了技术铺垫，同时也有利于后续使用Zenoh开发更多功能后，配置系统能够天然融入，这样的话付出一点开发成本我是可以接受的。
 
 目前我的配置文件全部使用yaml格式存储（自ros开始形成的路径依赖），在我进行上述调研时，了解到yaml与toml的一些差异：
 - toml设计更简洁、更规范化，yaml历史更悠久、更灵活
