@@ -1,7 +1,7 @@
 ---
 title: "Development Insights"
 categories:
-  - Note
+  - Blog
 ---
 
 本人从事自动驾驶行业，主要承担运动控制框架的开发，期间积累了一些开发经验。
