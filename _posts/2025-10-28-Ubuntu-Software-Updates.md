@@ -12,10 +12,10 @@ categories:
 ##### Clash
 一款极其知名的网络代理核心。
 
-- [Clash for Windows](https://github.com/lantongxue/clash_for_windows_pkg/releases/tag/0.20.39)
+- [Clash for Windows](https://github.com/lantongxue/clash_for_windows_pkg/releases/tag/0.20.39)  
   尽管该客户端已经不再更新，但它依然是目前我最优先的选择。
 
-- [Clash Verge Rev](https://www.clashverge.dev/)
+- [Clash Verge Rev](https://www.clashverge.dev/)  
   一款目前活跃更新中的客户端，Clash Verge的延续，使用了目前我十分感兴趣的Rust/Tauri技术栈，我期待它的未来，不过目前我还不打算切换至该客户端。
 
 ### apt
