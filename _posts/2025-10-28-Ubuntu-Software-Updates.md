@@ -6,10 +6,11 @@ categories:
 
 当我们更新软件时，偶尔会遇到不能顺畅更新的情况，通常这和我们所处的网络环境有关，在这里记录一些情况和解决方法。
 
-### VPN
+### VPN  
+
 咱这个行业这属于必修课了，当然我们的目的只是为了获得必要的开发资源。
 
-##### Clash
+#### Clash
 一款极其知名的网络代理核心。
 
 - [Clash for Windows](https://github.com/lantongxue/clash_for_windows_pkg/releases/tag/0.20.39)  
@@ -18,15 +19,15 @@ categories:
 - [Clash Verge Rev](https://www.clashverge.dev/)  
   一款目前活跃更新中的客户端，Clash Verge的延续，使用了目前我十分感兴趣的Rust/Tauri技术栈，我期待它的未来，不过目前我还不打算切换至该客户端。
 
-### apt
+### apt  
 
-##### aptitude
+#### aptitude
 ```bash
 sudo apt install aptitude
 ```
 神器！都遇到过Ubuntu依赖出现问题的情况吧？aptitude大多数情况下可以给出解决方案并让你选择是否使用，必须在用。
 
-##### force IPv4
+#### force IPv4
 
 某些网络环境下，IPv6的支持并不完善，使用IPv4可以顺畅更新。
 
@@ -34,13 +35,13 @@ sudo apt install aptitude
 sudo echo 'Acquire::ForceIPv4 "true";' > /etc/apt/apt.conf.d/99force-ipv4
 ```
 
-##### [chsrc](https://chsrc.run/)
+#### [chsrc](https://chsrc.run/)
 全平台通用换源工具与框架，非常好用，也不完美，比如某些源更新不及时，或是收录了不可靠的源，主要是ros2，不知道是否有修复，但总体很棒，在用。
 
-##### [https://linuxmirrors.cn/](https://linuxmirrors.cn/)
+#### [https://linuxmirrors.cn/](https://linuxmirrors.cn/)
 目前没有在用。
 
-### ros2 source with ubuntu
+### Change ros2 source on Ubuntu  
 ros2的安装教程中，早期是使用手动添加source list条目和GPG密钥的方式来安装ros2的apt源，现在已经更改为了从该[地址](https://github.com/ros-infrastructure/ros-apt-source/releases)下载一个特定的ros2-apt-source.deb并安装既可。
 
 ```bash
@@ -111,7 +112,7 @@ Signed-By:  -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 以上过程没什么技术难度，但很可惜我遇到一些人就是不会去看这些细节，只知对着教程一步一步机械性操作，不懂探究教程的每一步背后的原理，或许这也是技术软实力一个维度的体现吧。
 
-##### thirdparty tools
+#### thirdparty tools
 
 我注意到一些人使用[fishros](https://fishros.com/)提供的一键安装脚本，早期其解决了一些rosdep在国内网络环境下遭遇的困难。
 
@@ -122,15 +123,15 @@ Signed-By:  -----BEGIN PGP PUBLIC KEY BLOCK-----
 **PS:** 我实际测试使用了该工具并得出其不适合专业开发人员的结论，不过其缺点我已经忘记了，好久之前的事了。
 
 
-### Others
+### Others  
 
-##### [proxychains-ng](https://github.com/rofl0r/proxychains-ng)
+#### [proxychains-ng](https://github.com/rofl0r/proxychains-ng)
 
 很棒的一个工具，可以让终端下的命令走代理，但并不完美。现在我已经几乎不使用它了，Clash的TUN Mode更好用。
 
 这个属于代理工具了，但也算是和本文主题相关。
 
-##### terminal proxy by setting environment variables
+#### terminal proxy by setting environment variables
 emmmmmm，也相关？算了我就想写在这，反正这是一篇Note不是Blog。目前没有在用这个。
 ```bash
 alias setproxy="export ALL_PROXY=socks5://127.0.0.1:1080"
