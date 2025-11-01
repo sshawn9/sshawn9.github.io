@@ -33,4 +33,4 @@ sudo snap install nextcloud
 我也使用该框架来写一些文档，并搭配[nginx](https://nginx.org/)反向代理来托管到服务器上。
 
 不过后面我大概会把托管的文档撤掉，这里就不放链接了，放张截图看看效果吧。
-![alt text](../assets/images/autonomous-documentation-with-readthedocs.png)
+![](/assets/images/autonomous-documentation-with-readthedocs.png)
