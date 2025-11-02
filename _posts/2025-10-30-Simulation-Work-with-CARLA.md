@@ -26,6 +26,8 @@ categories:
 
 在自动驾驶领域，运动控制模块给出具体的控制量来让车辆产生期望的位姿变化，那么使用相同的接口，我们一样可以把手柄的操作信号对应到对车辆的控制量，这个工作早就有了，现在我们在仿真平台上运行它，这不就是个赛车游戏了嘛？
 
+<iframe src="//player.bilibili.com/player.html?bvid=BV1dTy9BWE4v&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
 视频还在制作中，第一次弄呢。
 
 ### CARLA——单车路径跟踪
