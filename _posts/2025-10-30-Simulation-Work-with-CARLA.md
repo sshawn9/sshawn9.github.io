@@ -29,8 +29,8 @@ categories:
 <div class="video-container">
     <iframe 
         src="//player.bilibili.com/player.html?bvid=BV1dTy9BWE4v&page=1" 
-        width="800" 
-        height="450" 
+        width="640" 
+        height="360" 
         scrolling="no" 
         border="0" 
         frameborder="no" 
