@@ -86,6 +86,7 @@ defaults:
       type: posts
     values:
       layout: single
+      mathjax: true
       toc: true
       toc_sticky: true
       author_profile: true
