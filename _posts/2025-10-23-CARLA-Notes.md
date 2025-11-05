@@ -22,11 +22,11 @@ mathjax: true
 
 #### Center of Mass
 
-https://github.com/carla-simulator/carla/issues/4487
+<https://github.com/carla-simulator/carla/issues/4487>
 
 #### Wheel Index Definition
 
-https://carla.readthedocs.io/en/latest/python_api/#carlavehiclephysicscontrol
+<https://carla.readthedocs.io/en/latest/python_api/#carlavehiclephysicscontrol>
 
 #### About Steer
 
@@ -57,17 +57,17 @@ https://carla.readthedocs.io/en/latest/python_api/#carlavehiclephysicscontrol
 | 0.01                 | 0.0040       | 
 
 注意到ackermann运动学关系为：  
-\\[k = \frac{1}{R} = \frac{\tan(\delta)}{L}\\]
 
 $$k = \frac{1}{R} = \frac{\tan(\delta)}{L}$$  
 
 而 $\tan(\delta)$ 可以被泰勒级数展开：  
+
 $$\tan(\delta) = \delta + \frac{1}{3}\delta^3 + \frac{2}{15}\delta^5 + \dots$$  
 
 这里就用三次函数来进行拟合，拟合结果是：
 
-$$k = 0.045407365999453636 * u^3 + -0.1032605725745423 * u^2 + 0.3997019204703261 * u$$
-$$u = -0.748291607126577 * k^3 + 1.718887821431124 * k^2 + 2.499327137790437 * k$$
+$$k = 0.045407365999453636 \* u^3 + -0.1032605725745423 \* u^2 + 0.3997019204703261 \* u$$
+$$u = -0.748291607126577 \* k^3 + 1.718887821431124 \* k^2 + 2.499327137790437 \* k$$
 
 
 这里顺带聊一下自动驾驶转向标定好了，这个话题其是可以拿出来单写一篇博客了，这里就随性写一下吧。
