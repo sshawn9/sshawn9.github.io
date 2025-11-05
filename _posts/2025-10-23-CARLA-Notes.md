@@ -56,6 +56,8 @@ https://carla.readthedocs.io/en/latest/python_api/#carlavehiclephysicscontrol
 | 0.01                 | 0.0040       | 
 
 注意到ackermann运动学关系为：  
+\\[k = \frac{1}{R} = \frac{\tan(\delta)}{L}\\]
+
 $$k = \frac{1}{R} = \frac{\tan(\delta)}{L}$$  
 
 而 $\tan(\delta)$ 可以被泰勒级数展开：  
