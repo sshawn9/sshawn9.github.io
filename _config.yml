@@ -30,6 +30,12 @@ search: true
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  math_engine: mathjax
+mathjax: true
+
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
@@ -86,7 +92,6 @@ defaults:
       type: posts
     values:
       layout: single
-      mathjax: true
       toc: true
       toc_sticky: true
       author_profile: true

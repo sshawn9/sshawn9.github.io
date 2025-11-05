@@ -2,6 +2,7 @@
 title: "CARLA Notes"
 categories:
   - Note
+mathjax: true
 ---
 
 一些关于CARLA的笔记。
