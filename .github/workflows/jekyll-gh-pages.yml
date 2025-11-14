@@ -68,4 +68,4 @@ jobs:
           rsync -avz --delete \
             -e "ssh -i ~/.ssh/id_ed25519 -p $DEPLOY_PORT -o StrictHostKeyChecking=yes" \
             ./_site/ \
-            deploy@"$DEPLOY_HOST":"$DEPLOY_PATH"/
+            gh_pages_deploy@"$DEPLOY_HOST":"$DEPLOY_PATH"/
