@@ -12,6 +12,13 @@ categories:
 ```bash
 sudo snap install nextcloud
 ```
+
+或者使用docker安装：
+
+```bash
+docker run -d -p 8080:80 -v ./nextcloud:/var/www/html --restart always --name nextcloud nextcloud
+```
+
 用法不介绍了，很简单。
 
 ### [Reactive Resume](https://rxresu.me/)
