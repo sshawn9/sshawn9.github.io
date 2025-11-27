@@ -103,3 +103,24 @@ rustdesk浅浅尝试了下，也没有惊艳我，持续关注吧。
 其他一些远程桌面不值一提了。
 
 [贝锐](https://www.oray.com/)有一些软硬件一体化方案，侵入性有点高，但也可以关注，只要足够好也可以。
+
+#### EasyTier
+
+```service
+# cat /etc/systemd/system/easytierweb.service 
+[Unit]
+Description=EasyTier Web Service
+After=network.target syslog.target
+Wants=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/easytier/easytier-web-embed --api-host http://your-server-ip:11211
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```bash
+./easytier-cli service install -w udp://your-server-ip:22020/admin --machine-id some-id --hostname some-name
+```
